@@ -4,7 +4,7 @@
   "description": "A simple password generator with NodeJS & Electron",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "keywords": [
     "Password",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/GermainMichaud/password-generator/issues"
   },
-  "homepage": "https://github.com/GermainMichaud/password-generator#readme"
+  "homepage": "https://github.com/GermainMichaud/password-generator#readme",
+  "devDependencies": {
+    "electron": "^13.1.7"
+  }
 }
