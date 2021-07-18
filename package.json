@@ -1,0 +1,24 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "A simple password generator with NodeJS & Electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Password",
+    "Electron",
+    "NodeJs"
+  ],
+  "author": "Germain Michaud <gmichaud.dev@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GermainMichaud/password-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GermainMichaud/password-generator/issues"
+  },
+  "homepage": "https://github.com/GermainMichaud/password-generator#readme"
+}
