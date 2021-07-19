@@ -51,6 +51,13 @@ passwordForm.addEventListener('submit', e => {
 
 });
 
+document.querySelector('#generatedPassword').addEventListener('click', function() {
+    this.select()
+    this.setSelectionRange(0, 99999)
+    document.execCommand('copy')
+    alert('Mot de passe copié dans le presse papié')
+})
+
 function getRandomLower() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
