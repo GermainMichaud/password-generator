@@ -12,7 +12,7 @@ function createWindow() {
   });
 
   // Devtools => debug
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools();
 
   mainWindow.loadFile('./public/index.html');
 }

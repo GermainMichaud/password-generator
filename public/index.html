@@ -5,9 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
+    <style>
+        input[type="text"] {
+            border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    background: transparent;
+    color: #fff;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    cursor: pointer;
+        }
+    </style>
   </head>
   <body>
     <h1>Password Generator</h1>
+
+    <form id="passwordForm">
+      <details>
+        <summary>Options</summary>
+        <div>
+            <div>
+                <label for="passLength">Nombre de caractères</label>
+                <input type="number" id="passLength" value="20">
+            </div>
+          <ul>
+            <li>
+              <input type="checkbox" name="alpha" id="alpha" />
+              <label for="alpha">Alpha</label>
+              <ul>
+                <li>
+                  <input type="checkbox" name="lower" id="lower" />
+                  <label for="lower">Lower case</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="upper" id="upper" />
+                  <label for="upper">Upper case</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" name="numeric" id="numeric" />
+              <label for="numeric">Numeric</label>
+            </li>
+            <li>
+              <input type="checkbox" name="special" id="special" />
+              <label for="special">Specials</label>
+            </li>
+          </ul>
+          <div></div>
+        </div>
+      </details>
+
+      <input type="text" id="generatedPassword" readonly />
+
+      <button>Generate Password</button>
+    </form>
 
     <script src="./renderer.js"></script>
   </body>
